@@ -33,6 +33,7 @@ const App = () =>  {
                     placeholder="Search"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
+                    onKeyPress={(e) => e.key === 'Enter' && searchImages(searchTerm)}
                 />
 
                 <img className="h-5 w-5 absolute ml-9"
